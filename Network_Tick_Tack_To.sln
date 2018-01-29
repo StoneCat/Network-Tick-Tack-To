@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 5.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Network_Tick_Tack_To", "Network_Tick_Tack_To\Network_Tick_Tack_To.csproj", "{7CED7E4D-2A13-406E-8F66-A9C0AA7DCC22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CED7E4D-2A13-406E-8F66-A9C0AA7DCC22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CED7E4D-2A13-406E-8F66-A9C0AA7DCC22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CED7E4D-2A13-406E-8F66-A9C0AA7DCC22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CED7E4D-2A13-406E-8F66-A9C0AA7DCC22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

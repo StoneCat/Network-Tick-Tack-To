@@ -1,0 +1,8 @@
+C:\Users\klausurber\Documents\SharpDevelop Projects\Network_Tick_Tack_To\Network_Tick_Tack_To\bin\Debug\Network_Tick_Tack_To.exe.config
+C:\Users\klausurber\Documents\SharpDevelop Projects\Network_Tick_Tack_To\Network_Tick_Tack_To\bin\Debug\Network_Tick_Tack_To.exe
+C:\Users\klausurber\Documents\SharpDevelop Projects\Network_Tick_Tack_To\Network_Tick_Tack_To\bin\Debug\Network_Tick_Tack_To.pdb
+C:\Users\klausurber\Documents\SharpDevelop Projects\Network_Tick_Tack_To\Network_Tick_Tack_To\obj\Debug\Network_Tick_Tack_To.csprojResolveAssemblyReference.cache
+C:\Users\klausurber\Documents\SharpDevelop Projects\Network_Tick_Tack_To\Network_Tick_Tack_To\obj\Debug\Network_Tick_Tack_To.MainForm.resources
+C:\Users\klausurber\Documents\SharpDevelop Projects\Network_Tick_Tack_To\Network_Tick_Tack_To\obj\Debug\Network_Tick_Tack_To.csproj.GenerateResource.Cache
+C:\Users\klausurber\Documents\SharpDevelop Projects\Network_Tick_Tack_To\Network_Tick_Tack_To\obj\Debug\Network_Tick_Tack_To.exe
+C:\Users\klausurber\Documents\SharpDevelop Projects\Network_Tick_Tack_To\Network_Tick_Tack_To\obj\Debug\Network_Tick_Tack_To.pdb
