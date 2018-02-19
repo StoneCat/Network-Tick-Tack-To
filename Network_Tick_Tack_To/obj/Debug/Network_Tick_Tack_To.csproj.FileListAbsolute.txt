@@ -14,3 +14,6 @@ C:\Users\luis_nikolai\Documents\SharpDevelop Projects\Network-Tick-Tack-To\Netwo
 C:\Users\luis_nikolai\Documents\SharpDevelop Projects\Network-Tick-Tack-To\Network_Tick_Tack_To\bin\Debug\Network_Tick_Tack_To.exe.config
 C:\Users\luis_nikolai\Documents\SharpDevelop Projects\Network-Tick-Tack-To\Network_Tick_Tack_To\bin\Debug\Network_Tick_Tack_To.exe
 C:\Users\luis_nikolai\Documents\SharpDevelop Projects\Network-Tick-Tack-To\Network_Tick_Tack_To\bin\Debug\Network_Tick_Tack_To.pdb
+C:\Users\luis_nikolai\Documents\SharpDevelop Projects\Network-Tick-Tack-To\Network_Tick_Tack_To\bin\Debug\Newtonsoft.Json.dll
+C:\Users\luis_nikolai\Documents\SharpDevelop Projects\Network-Tick-Tack-To\Network_Tick_Tack_To\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\luis_nikolai\Documents\SharpDevelop Projects\Network-Tick-Tack-To\Network_Tick_Tack_To\bin\Debug\Newtonsoft.Json.xml

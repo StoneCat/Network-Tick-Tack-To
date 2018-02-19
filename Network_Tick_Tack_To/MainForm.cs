@@ -5,6 +5,8 @@
  */
 using System;
 using System.Windows.Forms;
+using Network_Tick_Tack_To.JSONObjects;
+using Newtonsoft.Json;
 
 namespace Network_Tick_Tack_To
 {
@@ -15,6 +17,9 @@ namespace Network_Tick_Tack_To
 		public MainForm()
 		{
 			InitializeComponent();
+			//Install-Package Newtonsoft.Json -Version 3.5.8 
+			string creditApplicationJson = JsonConvert.SerializeObject(new JSONMessage());
+			textBox1.Text = creditApplicationJson;
 		}
 		
 		// Delegat-Typ für Thread-übergreifenden Methodenaufruf
@@ -27,8 +32,13 @@ namespace Network_Tick_Tack_To
             if (InvokeRequired)
                 BeginInvoke(new InvokeDelegate(showClientMessage), msg);
             else
-                // sonst direktes Schreiben möglich
-            	textBox1.Text = textBox1.Text + "\n\r" + msg;
+            {
+            	if (msg.Contains("{")) {
+            		JSONMessage msgBack = JsonConvert.DeserializeObject<JSONMessage>(msg);
+            		textBox1.Text = textBox1.Text + msgBack.PositionClick;	
+            	}
+            }
+
         }
         
         void Button1Click(object sender, EventArgs e)
@@ -49,45 +59,56 @@ namespace Network_Tick_Tack_To
             }
 		}
 		
-		private void schalteX(Label clickLabel) {
-			client.sendMessage(clickLabel.Text + "; X");
+		private void changeValue(JSONMessage msg) {
+			msg.PositionValue = "X";
+			msg.Type = "FieldChange";
+			client.sendMessage(JsonConvert.SerializeObject(msg));
 		}
 		
 		void Label1Click(object sender, EventArgs e)
 		{
-			this.schalteX((Label) sender);
+			//TopLeft
+			this.changeValue(new JSONMessage("TL"));
 		}
 		void Label2Click(object sender, EventArgs e)
 		{
-			this.schalteX((Label) sender);
+			//TopMid
+			this.changeValue(new JSONMessage("TM"));
 		}
 		void Label3Click(object sender, EventArgs e)
 		{
-			this.schalteX((Label) sender);
+			//TopRight
+			this.changeValue(new JSONMessage("TR"));
 		}
 		void Label6Click(object sender, EventArgs e)
 		{
-			this.schalteX((Label) sender);
+			//MidLeft
+			this.changeValue(new JSONMessage("ML"));
 		}
 		void Label5Click(object sender, EventArgs e)
 		{
-			this.schalteX((Label) sender);
+			//MidMid
+			this.changeValue(new JSONMessage("MM"));
 		}
 		void Label4Click(object sender, EventArgs e)
 		{
-			this.schalteX((Label) sender);
+			//MidRight
+			this.changeValue(new JSONMessage("MR"));
 		}
 		void Label9Click(object sender, EventArgs e)
 		{
-			this.schalteX((Label) sender);
+			//BottomLeft
+			this.changeValue(new JSONMessage("BL"));
 		}
 		void Label8Click(object sender, EventArgs e)
 		{
-			this.schalteX((Label) sender);
+			//BottomMid
+			this.changeValue(new JSONMessage("BM"));
 		}
 		void Label7Click(object sender, EventArgs e)
 		{
-			this.schalteX((Label) sender);
+			//BottomRight
+			this.changeValue(new JSONMessage("BR"));
 		}
 	}
 }
