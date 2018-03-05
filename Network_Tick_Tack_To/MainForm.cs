@@ -54,56 +54,8 @@ namespace Network_Tick_Tack_To
             }
 		}
 		
-		private void changeValue(JSONMessage msg) {
-			msg.PositionValue = "X";
-			msg.Type = "FieldChange";
+		public void sendServerMassage(JSONMessage msg) {
 			client.sendMessage(JsonConvert.SerializeObject(msg));
-		}
-		
-		void Label1Click(object sender, EventArgs e)
-		{
-			//TopLeft
-			this.changeValue(new JSONMessage("TL"));
-		}
-		void Label2Click(object sender, EventArgs e)
-		{
-			//TopMid
-			this.changeValue(new JSONMessage("TM"));
-		}
-		void Label3Click(object sender, EventArgs e)
-		{
-			//TopRight
-			this.changeValue(new JSONMessage("TR"));
-		}
-		void Label6Click(object sender, EventArgs e)
-		{
-			//MidLeft
-			this.changeValue(new JSONMessage("ML"));
-		}
-		void Label5Click(object sender, EventArgs e)
-		{
-			//MidMid
-			this.changeValue(new JSONMessage("MM"));
-		}
-		void Label4Click(object sender, EventArgs e)
-		{
-			//MidRight
-			this.changeValue(new JSONMessage("MR"));
-		}
-		void Label9Click(object sender, EventArgs e)
-		{
-			//BottomLeft
-			this.changeValue(new JSONMessage("BL"));
-		}
-		void Label8Click(object sender, EventArgs e)
-		{
-			//BottomMid
-			this.changeValue(new JSONMessage("BM"));
-		}
-		void Label7Click(object sender, EventArgs e)
-		{
-			//BottomRight
-			this.changeValue(new JSONMessage("BR"));
 		}
 	}
 }

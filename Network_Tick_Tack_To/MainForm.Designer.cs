@@ -11,7 +11,7 @@
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.GroupBox groupbox1;
 		
-		private GamePitch gp = new GamePitch();
+		private GamePitch _gamePitch;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -91,9 +91,10 @@
 			this.Controls.Add(this.groupbox1);
 			
 			//TODO: Implement dynamic GamePitchItem creation as settings
+			this._gamePitch = new GamePitch(this);
 			for (int down = 0; down <= 2; down++) {
 				for (int left = 0; left <= 2; left++) {
-					this.Controls.Add(gp.getPitchItem(down, left));
+					this.Controls.Add(_gamePitch.getPitchItem(down, left));
 				}
 			}
 			
