@@ -1,9 +1,4 @@
-﻿/*
- * User: 
- * Date: 29.01.2018
- * Time: 20:01
- */
-using System;
+﻿using System;
 using System.Windows.Forms;
 using Network_Tick_Tack_To.JSONObjects;
 using Newtonsoft.Json;

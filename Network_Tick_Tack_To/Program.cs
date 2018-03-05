@@ -1,12 +1,4 @@
-﻿/*
- * Created by SharpDevelop.
- * User: klausurBer
- * Date: 29.01.2018
- * Time: 20:01
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace Network_Tick_Tack_To
