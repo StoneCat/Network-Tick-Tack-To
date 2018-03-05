@@ -30,7 +30,8 @@ namespace Network_Tick_Tack_To
             {
             	if (msg.Contains("{")) {
             		JSONMessage msgBack = JsonConvert.DeserializeObject<JSONMessage>(msg);
-            		textBox1.Text = textBox1.Text + msgBack.PositionClick;	
+            		textBox1.Text = textBox1.Text + msgBack.PositionClick;
+            		//TODO: Add Text Change in GameLogic Class
             	}
             }
 

@@ -54,6 +54,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Game\GameLogic.cs" />
     <Compile Include="Game\GamePitch.cs" />
     <Compile Include="JSONObjects\JSONMessage.cs" />
     <Compile Include="MainForm.cs" />
